@@ -1,0 +1,36 @@
+<!-- <p>Titre de ma page : {{ title }}</p>
+<p *ngIf="isDisplayed">hero-list works!</p>
+<p *ngIf="!isDisplayed">hero-list failed!</p>
+
+<p>Mes super-héros</p>
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Score</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let hero of heroArray">
+            <td>{{ hero.nom }}</td>
+            <td>{{ hero.score ?? 'N/A' }}</td>
+        </tr>
+</table>
+
+<p>Somme de mes boutons : {{ count }}</p>
+
+<button type="button" (click)="onButtonClicked($event, 1)">+1</button>
+<button type="button" (click)="onButtonClicked($event, -1)">-1</button>
+<button type="button" (click)="onButtonClicked($event, 2)">+2</button>
+
+<p>Nous somme le {{ currentDate | date : 'dd/MM/yyyy HH:mm:ss' }}</p> -->
+
+<form [formGroup]="profileForm">
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName">
+
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName">
+
+    <label for="adress">Adresse: </label>
+    <input id="adress" type="text" formControlName="adress">
+</form>
